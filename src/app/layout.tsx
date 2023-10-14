@@ -2,6 +2,8 @@ import "./globals.css";
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import { Open_Sans } from "next/font/google";
+import Header from "./components/Header";
+import Footer from "./components/Footer";
 
 const inter = Inter({ subsets: ["latin"] });
 const sans = Open_Sans({ subsets: ["latin"] });
@@ -17,8 +19,12 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en">
-      <body className={sans.className}>{children}</body>
+    <html lang="en" className={sans.className}>
+      <body className="flex flex-col w-full max-w-screen-2xl mx-auto">
+        <Header />
+        <main className="grow">{children}</main>
+        <Footer />
+      </body>
     </html>
   );
 }
