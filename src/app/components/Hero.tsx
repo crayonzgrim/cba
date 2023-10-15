@@ -13,7 +13,7 @@ export default function Hero() {
         priority
       />
       <div className="">
-        <h2 className="text-2xl font-bold mt-2">Hi, I'm crayonzgrim</h2>
+        <h2 className="text-2xl font-bold mt-2">crayonzgrim</h2>
         <h3 className="text-xl font-semibold">
           Full-stack engineer based by Node.js
         </h3>

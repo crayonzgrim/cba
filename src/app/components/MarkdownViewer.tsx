@@ -24,11 +24,12 @@ export default function MarkdownViewer({ content }: { content: string }) {
           return match ? (
             <SyntaxHighlighter
               /* {...rest} */
-              children={String(children).replace(/\n$/, "")}
               style={gruvboxDark}
               language={match[1]}
               PreTag="div"
-            />
+            >
+              {String(children).replace(/\n$/, "")}
+            </SyntaxHighlighter>
           ) : (
             <code {...rest} className={className}>
               {children}
