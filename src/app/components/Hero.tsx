@@ -14,7 +14,9 @@ export default function Hero() {
       />
       <div className="">
         <h2 className="text-2xl font-bold mt-2">Hi, I'm crayonzgrim</h2>
-        <h3 className="text-xl font-semibold">Full-stack engineer</h3>
+        <h3 className="text-xl font-semibold">
+          Full-stack engineer based by Node.js
+        </h3>
         <Link href="/contact">
           <button className="bg-yellow-500 font-bold rounded-xl py-2 px-4 mt-5">
             Contact me
